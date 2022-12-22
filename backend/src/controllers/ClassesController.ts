@@ -77,7 +77,7 @@ import convertHoursToMinutes from "../utils/convertHoursToMinutes";
                 .join("teachers", "classes.teacher_id", "=", "teachers.id")
                 .select(["classes.*", "teachers.*"]);
 
-                return response.json(classes);
+                    return response.json(classes);
         };
     };
 
