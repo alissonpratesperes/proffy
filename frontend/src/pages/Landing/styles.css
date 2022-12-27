@@ -1,0 +1,136 @@
+div#page_landing {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+}
+
+div#page_landing div#page_landing_content div.container-logo {
+    margin-bottom: 3.2rem;
+    text-align: center;
+}
+
+div#page_landing div#page_landing_content div.container-logo img {
+    height: 15rem;
+}
+
+div#page_landing div#page_landing_content div.container-logo h2 {
+    margin-top: 3.2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
+
+div#page_landing div#page_landing_content img.landing-image {
+    width: 100%; 
+}
+
+div#page_landing div#page_landing_content div.container-buttons {
+    margin: 3.2rem 0rem 6.4rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#page_landing div#page_landing_content div.container-buttons a {
+    height: 10rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 700 2rem Archivo;
+    text-decoration: none;
+    border-radius: 1.25rem;
+    color: var(--color-button-text);
+    transition-property: background-color;
+    transition: all 0.2s ease-in-out;
+}
+
+div#page_landing div#page_landing_content div.container-buttons a img {
+    margin-right: 2.5rem;
+    width: 4rem;
+}
+
+div#page_landing div#page_landing_content div.container-buttons a.study-button {
+    background: var(--color-primary-lighter);
+}
+
+div#page_landing div#page_landing_content div.container-buttons a.study-button:hover {
+    background: var(--color-primary-light);
+}
+
+div#page_landing div#page_landing_content div.container-buttons a.class-button {
+    background: var(--color-secundary);
+}
+
+div#page_landing div#page_landing_content div.container-buttons a.class-button:hover {
+    background: var(--color-secundary-dark);
+}
+
+div#page_landing div#page_landing_content span.total-connections {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#page_landing div#page_landing_content span.total-connections img {
+    margin-left: 2.5rem;
+    width: 2.5rem;
+}
+
+    @media (min-width: 1100px) {
+        div#page_landing div#page_landing_content {
+            max-width: 1100px;
+            display: grid;
+            grid-template-rows: 350px 1fr;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-areas: "logo landing landing" "buttons buttons total";
+        }
+
+        div#page_landing div#page_landing_content div.container-logo {
+            grid-area: logo;
+            align-self: center;
+            text-align: left;
+        }
+
+        div#page_landing div#page_landing_content div.container-logo img {
+            height: 100%;
+            width: 90%;
+        }
+
+        div#page_landing div#page_landing_content div.container-logo h2 {
+            text-align: initial;
+            font-size: 3rem;
+        }
+
+        div#page_landing div#page_landing_content img.landing-image {
+            grid-area: landing;
+            justify-self: end;
+        }
+
+        div#page_landing div#page_landing_content div.container-buttons {
+            grid-area: buttons;
+            justify-content: flex-start;
+        }
+
+        div#page_landing div#page_landing_content div.container-buttons a:first-child {
+            margin-right: 3.2rem;
+        }
+    
+        div#page_landing div#page_landing_content span.total-connections {
+            margin-bottom: 32px;
+            grid-area: total;
+            justify-self: end;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        div#page_landing div#page_landing_content span.total-connections img {
+            margin-left: 1.5rem;
+            width: 2rem;
+        }
+    }
