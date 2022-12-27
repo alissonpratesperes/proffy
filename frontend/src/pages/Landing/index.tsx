@@ -1,4 +1,5 @@
 import react from "react";
+import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/logo.svg";
 import landing from "../../assets/images/landing.svg";
@@ -17,14 +18,14 @@ import "./styles.css";
                     </div>
                         <img src={ landing } alt="Landing" className="landing-image"/>
                             <div className="container-buttons">
-                                <a className="study-button" href="">
+                                <Link className="study-button" to="/studies">
                                     <img src={ study } alt="Studies"/>
                                         Estudar
-                                </a>
-                                <a className="class-button" href="">
+                                </Link>
+                                <Link className="class-button" to="/classes">
                                     <img src={ classes } alt="Classes"/>
                                         Lecionar
-                                </a>
+                                </Link>
                             </div>
                                 <span className="total-connections">
                                     Total de 200 conexões já realizadas
