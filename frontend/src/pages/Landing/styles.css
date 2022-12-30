@@ -19,8 +19,7 @@ div#page_landing div#page_landing_content div.container-logo img {
 
 div#page_landing div#page_landing_content div.container-logo h2 {
     margin-top: 3.2rem;
-    font-size: 3rem;
-    font-weight: 500;
+    font: 500 3rem Poppins;
     line-height: 4.5rem;
 }
 
@@ -71,10 +70,10 @@ div#page_landing div#page_landing_content div.container-buttons a.class-button:h
 }
 
 div#page_landing div#page_landing_content span.total-connections {
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    font: 500 1.3rem Poppins;
 }
 
 div#page_landing div#page_landing_content span.total-connections img {
@@ -104,7 +103,6 @@ div#page_landing div#page_landing_content span.total-connections img {
 
         div#page_landing div#page_landing_content div.container-logo h2 {
             text-align: initial;
-            font-size: 3rem;
         }
 
         div#page_landing div#page_landing_content img.landing-image {
@@ -125,8 +123,6 @@ div#page_landing div#page_landing_content span.total-connections img {
             margin-bottom: 32px;
             grid-area: total;
             justify-self: end;
-            font-size: 1.3rem;
-            font-weight: 700;
         }
 
         div#page_landing div#page_landing_content span.total-connections img {
