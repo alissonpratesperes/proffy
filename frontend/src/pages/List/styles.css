@@ -38,6 +38,12 @@ div#page_list header.page_header form#teachers_search div.input-block:focus-with
     border: 2px solid var(--color-primary-light);
 }
 
+div#page_list main {
+    margin: 3.2rem auto 3.2rem auto;
+    padding-bottom: 3.2rem;
+    width: 90%;
+}
+
     @media (min-width: 700px) {
         div#page_list {
             max-width: 100%;
@@ -53,5 +59,11 @@ div#page_list header.page_header form#teachers_search div.input-block:focus-with
 
         div#page_list header.page_header form#teachers_search div.input-block + div.input-block {
             margin-top: 0rem;
+        }
+
+        div#page_list main {
+            margin: 0rem auto 0rem auto;
+            padding: 3.2rem 0rem 3.2rem 0rem;
+            max-width: 74rem;
         }
     }

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "../../components/Header";
+import Teacher from "../../components/Teacher";
 import "./styles.css";
 
     function List() {
@@ -21,7 +22,10 @@ import "./styles.css";
                                 <input id="time" type="text"/>
                         </div>
                     </form>
-                </Header> 
+                </Header>
+                    <main>
+                        <Teacher/>
+                    </main>
             </div>
         );
     };
