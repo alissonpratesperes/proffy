@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
 import Textarea from "../../components/Textarea";
+import Select from "../../components/Select";
 import warning from "../../assets/icons/warning.svg";
 import heart from "../../assets/icons/purple-heart.svg";
 import "./styles.css";
@@ -25,7 +26,7 @@ import "./styles.css";
                             <legend>
                                 Sobre a aula
                             </legend>
-                                <Input label="Matéria" name="matter"/>
+                                <Select label="Matéria" name="matter"/>
                                 <Input label="Custo Hora/Aula" name="cost"/>
                         </fieldset>
                             <footer>
