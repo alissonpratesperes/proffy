@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "../../components/Header";
 import Input from "../../components/Input";
+import Textarea from "../../components/Textarea";
 import warning from "../../assets/icons/warning.svg";
 import heart from "../../assets/icons/purple-heart.svg";
 import "./styles.css";
@@ -18,6 +19,7 @@ import "./styles.css";
                                 <Input label="Nome" name="name"/>
                                 <Input label="Avatar" name="avatar"/>
                                 <Input label="WhatsApp" name="whatsapp"/>
+                                <Textarea label="Biografia" name="biography"/>
                         </fieldset>
                         <fieldset>
                             <legend>

@@ -1,16 +1,17 @@
-div.input-block + div.input-block {
+div.textarea-block {
     margin-top: 3.2rem;
 }
 
-div.input-block label {
+div.textarea-block label {
     font: 500 1.3rem Poppins;
-    color: var(--color-text-in-primary);
+    color: var(--color-text-complement);
 }
 
-div.input-block input {
+div.textarea-block textarea {
     margin-top: 0.8rem;
-    padding: 0rem 1.6rem 0rem 1.6rem;
-    height: 5rem;
+    padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+    height: 20rem;
+    min-height: 5rem;
     width: 100%;
     font: 500 1.6rem Archivo;
     background: var(--color-input-background);
@@ -18,16 +19,11 @@ div.input-block input {
     border: 0rem;
     border: 2px solid var(--color-input-background);
     outline: 0rem;
+    resize: vertical;
     transition-property: border;
     transition: all 0.2s ease-in-out;
 }
 
-div.input-block:focus-within input {
+div.textarea-block:focus-within textarea {
     border: 2px solid var(--color-primary-light);
 }
-
-    @media (min-width: 700px) {
-        div.input-block + div.input-block {
-            margin-top: 0rem;
-        }
-    }
