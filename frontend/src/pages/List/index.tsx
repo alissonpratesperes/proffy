@@ -2,25 +2,17 @@ import React from "react";
 
 import Header from "../../components/Header";
 import Teacher from "../../components/Teacher";
+import Input from "../../components/Input";
 import "./styles.css";
 
     function List() {
-        return(
+        return (
             <div id="page_list" className="container">
                 <Header title="Estes são os Proffys disponíveis">
                     <form id="teachers_search">
-                        <div className="input-block">
-                            <label htmlFor="matter"> Matéria </label>
-                                <input id="matter" type="text"/>
-                        </div>
-                        <div className="input-block">
-                            <label htmlFor="week_day"> Dia da Semana </label>
-                                <input id="week_day" type="text"/>
-                        </div>
-                        <div className="input-block">
-                            <label htmlFor="time"> Hora </label>
-                                <input id="time" type="text"/>
-                        </div>
+                        <Input label="Matéria" name="matter"/>
+                        <Input label="Dia da semana" name="week_day"/>
+                        <Input label="Hora" name="time" type="time"/>
                     </form>
                 </Header>
                     <main>

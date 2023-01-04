@@ -3,39 +3,8 @@ div#page_list {
     width: 100vw;
 }
 
-div#page_list header.page_header form#teachers_search {
-    margin-top: 3.2rem;  
-}
-
-div#page_list header.page_header form#teachers_search div.input-block + div.input-block {
-    margin-top: 1.6rem;
-}
-
-div#page_list header.page_header form#teachers_search div.input-block label {
-    color: var(--color-text-in-primary);
-}
-
-div#page_list header.page_header form#teachers_search div.input-block label {
-    font: 500 1.3rem Poppins;
-}
-
-div#page_list header.page_header form#teachers_search div.input-block input {
-    margin-top: 0.8rem;
-    padding: 0rem 1.6rem 0rem 1.6rem;
-    height: 5rem;
-    width: 100%;
-    font: 500 1.6rem Archivo;
-    background: var(--color-input-background);
-    border-radius: 1.25rem;
-    border: 0rem;
-    border: 2px solid var(--color-input-background);
-    outline: 0rem;
-    transition-property: border;
-    transition: all 0.2s ease-in-out;
-}
-
-div#page_list header.page_header form#teachers_search div.input-block:focus-within input {
-    border: 2px solid var(--color-primary-light);
+form#teachers_search {
+    margin-top: 3.2rem;
 }
 
 div#page_list main {
@@ -55,10 +24,6 @@ div#page_list main {
             column-gap: 1.6rem;
             position: absolute;
             bottom: -2.5rem;
-        }
-
-        div#page_list header.page_header form#teachers_search div.input-block + div.input-block {
-            margin-top: 0rem;
         }
 
         div#page_list main {

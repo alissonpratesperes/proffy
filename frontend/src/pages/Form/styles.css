@@ -1,0 +1,132 @@
+div#page_form {
+    height: 100vh;
+    width: 100vw;
+}
+
+div#page_form header.page_header div.page_header_content {
+    margin-bottom: 6.4rem;
+}
+
+div#page_form main {
+    margin: -3.2rem auto 3.2rem auto;
+    padding-top: 6.4rem;
+    width: 90%;
+    max-width: 74rem;
+    background: var(--color-box-base);
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    overflow: hidden;
+}
+
+div#page_form main fieldset + fieldset {
+    margin-top: 6.4rem;
+}
+
+div#page_form main fieldset {
+    padding: 0rem 3.2rem 0rem 3.2rem;
+    border: 0;
+}
+
+div#page_form main fieldset legend {
+    margin-bottom: 3.2rem;
+    padding-bottom: 1.6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font: 700 3rem Archivo;
+    color: var(--color-text-title);
+    border-bottom: 2px solid var(--color-line-in-white);
+}
+
+div#page_form main fieldset div.input-block label {
+    color: var(--color-text-complement);
+}
+
+div#page_form main footer {
+    margin-top: 6.4rem;
+    padding: 3.2rem 3.2rem 3.2rem 3.2rem;
+    background: var(--color-box-footer);
+    border-top: 2px solid var(--color-line-in-white);
+}
+
+div#page_form main footer p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font: 500 1.5rem Poppins;
+    line-height: 2.4rem;
+    color: var(--color-text-complement);
+}
+
+div#page_form main footer p img {
+    margin-right: 2.5rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+div#page_form main footer button {
+    margin-top: 3.2rem;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font: 700 2rem Archivo;
+    color: var(--color-button-text);
+    background-color: var(--color-secundary);
+    text-decoration: none;
+    border: 0;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition-property: background-color;
+    transition: all 0.2s ease-in-out;
+}
+
+div#page_form main footer button img {
+    margin-right: 1.6rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+div#page_form main footer button:hover {
+    background: var(--color-secundary-dark);
+}
+
+    @media(min-width: 700px) {
+        div#page_form {
+            max-width: 100vw;
+        }
+
+        div#page_form header.page_header div.page_header_content {
+            margin-bottom: 0rem;
+        }
+
+        div#page_form main fieldset {
+            padding: 0rem 6.4rem 0rem 6.4rem;
+        }
+
+        div#page_form main fieldset div.input-block + div.input-block {
+            margin-top: 3.2rem;
+        }
+
+        div#page_form main footer {
+            padding: 3.2rem 6.4rem 3.2rem 6.4rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div#page_form main footer p {
+            justify-content: space-between;
+        }
+
+        div#page_form main footer button {
+            margin-top: 0rem;
+            width: 24.5rem;
+        }
+    }

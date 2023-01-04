@@ -77,7 +77,8 @@ div#page_landing div#page_landing_content span.total-connections {
 }
 
 div#page_landing div#page_landing_content span.total-connections img {
-    margin-left: 2.5rem;
+    margin-left: 1.6rem;
+    height: 2.5rem;
     width: 2.5rem;
 }
 
@@ -123,10 +124,5 @@ div#page_landing div#page_landing_content span.total-connections img {
             margin-bottom: 32px;
             grid-area: total;
             justify-self: end;
-        }
-
-        div#page_landing div#page_landing_content span.total-connections img {
-            margin-left: 1.5rem;
-            width: 2rem;
         }
     }

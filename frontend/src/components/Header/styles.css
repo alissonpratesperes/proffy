@@ -1,10 +1,10 @@
-div#page_list header.page_header {
+header.page_header {
     display: flex;
     flex-direction: column;
     background: var(--color-primary);
 }
 
-div#page_list header.page_header div.top_bar_container {
+header.page_header div.top_bar_container {
     margin: 0rem auto 0rem auto;
     padding: 1.6rem 0rem 1.6rem 0rem;
     width: 90%;
@@ -14,7 +14,7 @@ div#page_list header.page_header div.top_bar_container {
     justify-content: space-between;
 }
 
-div#page_list header.page_header div.top_bar_container a {
+header.page_header div.top_bar_container a {
     height: 3.2rem;
     color: var(--color-title-in-primary);
     opacity: 0.5;
@@ -22,40 +22,48 @@ div#page_list header.page_header div.top_bar_container a {
     transition: all 0.2s ease-in-out;
 }
 
-div#page_list header.page_header div.top_bar_container a:hover {
+header.page_header div.top_bar_container a:hover {
     opacity: 1;
 }
 
-div#page_list header.page_header div.top_bar_container > img {
+header.page_header div.top_bar_container > img {
     height: 2rem;
 }
 
-div#page_list header.page_header div.page_header_content {
+header.page_header div.page_header_content {
     margin: 3.2rem auto 3.2rem auto;
     width: 90%;
     position: relative;
 }
 
-div#page_list header.page_header div.page_header_content strong {
+header.page_header div.page_header_content strong {
     font: 700 3rem Archivo;
     line-height: 4.2rem;
     color: var(--color-title-in-primary);
 }
 
+header.page_header div.page_header_content p {
+    margin-top: 3.2rem;
+    max-width: 30rem;
+    font: 500 1.5rem Poppins;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+}
+
     @media (min-width: 700px) {
-        div#page_list header.page_header {
+        header.page_header {
             height: 34rem;
         }
 
-        div#page_list header.page_header div.top_bar_container {
+        header.page_header div.top_bar_container {
             max-width: 1100px;
         }
 
-        div#page_list header.page_header div.top_bar_container > img {
+        header.page_header div.top_bar_container > img {
             height: 4rem;
         }
 
-        div#page_list header.page_header div.page_header_content {
+        header.page_header div.page_header_content {
             margin: 0rem auto 0rem auto;
             padding-bottom: 4.8rem;
             max-width: 740px;
@@ -66,7 +74,7 @@ div#page_list header.page_header div.page_header_content strong {
             justify-content: center;
         }
 
-        div#page_list header.page_header div.page_header_content strong {
+        header.page_header div.page_header_content strong {
             max-width: 350px;
         }
     }

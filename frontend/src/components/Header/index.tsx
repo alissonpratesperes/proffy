@@ -19,6 +19,7 @@ import "./styles.css";
                     <strong>
                         { properties.title }
                     </strong>
+                        { properties.description && <p> { properties.description } </p> }
                         { properties.children }
                 </div>
             </header>
