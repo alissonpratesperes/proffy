@@ -17,6 +17,7 @@ import "./styles.css";
 
             function handleTeachersSearch(event: FormEvent) {
                 event.preventDefault();
+
                     api.get("/classes", { params: { week_day: weekday, matter, time } }).then(response => {
                         setTeachers(response.data);
                     });    

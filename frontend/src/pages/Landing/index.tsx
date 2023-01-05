@@ -15,6 +15,7 @@ import "./styles.css";
             useEffect(() => {
                 api.get("/connections").then(response => {
                     const { total } = response.data;
+
                         setTotalConnections(total);
                 });
             }, []);

@@ -29,6 +29,7 @@ import "./styles.css";
             };
             function handleCreateClass(event: FormEvent) {
                 event.preventDefault();
+
                     api.post("/classes", { name, avatar, whatsapp, biography, matter, cost: Number(cost), schedule: scheduleItems }).then(response => {
                         alert("Cadastro salvo com sucesso! ✅");
                             navigate("/");
@@ -44,8 +45,11 @@ import "./styles.css";
                                 [field]: value
                         };
                     };
+
                         return scheduleItem;
                 });
+
+
                     setScheduleItems(updatedScheduleItems);
             };
 

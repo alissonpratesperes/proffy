@@ -6,7 +6,7 @@ import List from "./pages/List";
 import Form from "./pages/Form";
 
     function Router() {
-        return(
+        return (
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={ <Landing/> } />
