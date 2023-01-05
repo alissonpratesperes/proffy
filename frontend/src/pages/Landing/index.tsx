@@ -13,14 +13,10 @@ import "./styles.css";
         const [ totalConnections, setTotalConnections ] = useState(0); 
 
             useEffect(() => {
-                api.get(
-                    "/connections"
-                ).then(
-                    response => {
-                        const { total } = response.data;
-                            setTotalConnections(total);
-                    }
-                );
+                api.get("/connections").then(response => {
+                    const { total } = response.data;
+                        setTotalConnections(total);
+                });
             }, []);
 
                 return (
@@ -30,7 +26,7 @@ import "./styles.css";
                                 <img src={ logo } alt="Proffy"/>
                                     <h2> Sua plataforma de estudos on-line </h2>
                             </div>
-                                <img src={ landing } alt="Landing" className="landing-image"/>
+                                <img className="landing-image" src={ landing } alt="Landing"/>
                                     <div className="container-buttons">
                                         <Link className="study-button" to="/studies">
                                             <img src={ study } alt="Studies"/>

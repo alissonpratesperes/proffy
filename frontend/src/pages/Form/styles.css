@@ -18,20 +18,20 @@ div#page_form main {
     overflow: hidden;
 }
 
-div#page_form main fieldset + fieldset {
+div#page_form main form fieldset + fieldset {
     margin-top: 6.4rem;
 }
 
-div#page_form main fieldset div.select-block + div.input-block {
+div#page_form main form fieldset div.select-block + div.input-block {
     margin-top: 3.2rem;
 }
 
-div#page_form main fieldset {
+div#page_form main form fieldset {
     padding: 0rem 3.2rem 0rem 3.2rem;
     border: 0;
 }
 
-div#page_form main fieldset legend {
+div#page_form main form fieldset legend {
     margin-bottom: 3.2rem;
     padding-bottom: 1.6rem;
     width: 100%;
@@ -44,7 +44,7 @@ div#page_form main fieldset legend {
     border-bottom: 2px solid var(--color-line-in-white);
 }
 
-div#page_form main fieldset legend button {
+div#page_form main form fieldset legend button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,29 +58,29 @@ div#page_form main fieldset legend button {
     transition: all 0.2s ease-in-out;
 }
 
-div#page_form main fieldset legend button img {
+div#page_form main form fieldset legend button img {
     margin-right: 1.6rem;
     height: 2.5rem;
     width: 2.5rem
 }
 
-div#page_form main fieldset legend button:hover {
+div#page_form main form fieldset legend button:hover {
     color: var(--color-primary-dark);
 }
 
-div#page_form main fieldset div.input-block label,
-div#page_form main fieldset div.select-block label {
+div#page_form main form fieldset div.input-block label,
+div#page_form main form fieldset div.select-block label {
     color: var(--color-text-complement);
 }
 
-div#page_form main footer {
+div#page_form main form footer {
     margin-top: 6.4rem;
     padding: 3.2rem 3.2rem 3.2rem 3.2rem;
     background: var(--color-box-footer);
     border-top: 2px solid var(--color-line-in-white);
 }
 
-div#page_form main footer p {
+div#page_form main form footer p {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -90,13 +90,13 @@ div#page_form main footer p {
     color: var(--color-text-complement);
 }
 
-div#page_form main footer p img {
+div#page_form main form footer p img {
     margin-right: 2.5rem;
     height: 4rem;
     width: 4rem;
 }
 
-div#page_form main footer button {
+div#page_form main form footer button {
     margin-top: 3.2rem;
     height: 6rem;
     width: 100%;
@@ -115,13 +115,13 @@ div#page_form main footer button {
     transition: all 0.2s ease-in-out;
 }
 
-div#page_form main footer button img {
+div#page_form main form footer button img {
     margin-right: 1.6rem;
     height: 2.5rem;
     width: 2.5rem;
 }
 
-div#page_form main footer button:hover {
+div#page_form main form footer button:hover {
     background: var(--color-secundary-dark);
 }
 
@@ -134,25 +134,25 @@ div#page_form main footer button:hover {
             margin-bottom: 0rem;
         }
 
-        div#page_form main fieldset {
+        div#page_form main form fieldset {
             padding: 0rem 6.4rem 0rem 6.4rem;
         }
 
-        div#page_form main fieldset div.input-block + div.input-block {
+        div#page_form main form fieldset div.input-block + div.input-block {
             margin-top: 3.2rem;
         }
 
-        div#page_form main div.schedule-item {
+        div#page_form main form div.schedule-item {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
             column-gap: 1.6rem;
         }
 
-        div#page_form main fieldset div.schedule-item div.input-block {
+        div#page_form main form fieldset div.schedule-item div.input-block {
             margin-top: 0rem;
         }
 
-        div#page_form main footer {
+        div#page_form main form footer {
             padding: 3.2rem 6.4rem 3.2rem 6.4rem;
             display: flex;
             flex-direction: row;
@@ -160,11 +160,11 @@ div#page_form main footer button:hover {
             justify-content: space-between;
         }
 
-        div#page_form main footer p {
+        div#page_form main form footer p {
             justify-content: space-between;
         }
 
-        div#page_form main footer button {
+        div#page_form main form footer button {
             margin-top: 0rem;
             width: 24.5rem;
         }
