@@ -44,6 +44,30 @@ div#page_form main fieldset legend {
     border-bottom: 2px solid var(--color-line-in-white);
 }
 
+div#page_form main fieldset legend button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 0;
+    font: 700 2rem Archivo;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition-property: color;
+    transition: all 0.2s ease-in-out;
+}
+
+div#page_form main fieldset legend button img {
+    margin-right: 1.6rem;
+    height: 2.5rem;
+    width: 2.5rem
+}
+
+div#page_form main fieldset legend button:hover {
+    color: var(--color-primary-dark);
+}
+
 div#page_form main fieldset div.input-block label,
 div#page_form main fieldset div.select-block label {
     color: var(--color-text-complement);
@@ -116,6 +140,16 @@ div#page_form main footer button:hover {
 
         div#page_form main fieldset div.input-block + div.input-block {
             margin-top: 3.2rem;
+        }
+
+        div#page_form main div.schedule-item {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            column-gap: 1.6rem;
+        }
+
+        div#page_form main fieldset div.schedule-item div.input-block {
+            margin-top: 0rem;
         }
 
         div#page_form main footer {
