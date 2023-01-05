@@ -46,7 +46,6 @@ import "./styles.css";
                     };
                         return scheduleItem;
                 });
-
                     setScheduleItems(updatedScheduleItems);
             };
 

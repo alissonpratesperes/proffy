@@ -1,28 +1,24 @@
 import React from "react";
 
 import whatsapp from "../../assets/icons/whatsapp.svg";
+import TeacherProps from "../../interfaces/TeacherProps.interface";
 import "./styles.css";
 
-    function Teacher() {
+    const Teacher: React.FunctionComponent<TeacherProps> = ({ teacher }) => {
         return (
             <article className="teacher-item">
                 <header>
-                    <img src="https://avatars.githubusercontent.com/u/2254731?v=4" alt="Alisson Prates Peres"/>
+                    <img src={ teacher.avatar } alt={ teacher.name }/>
                         <div>
-                            <strong> Alisson Prates Peres </strong>
-                                <span> Desenvolvimento de Software </span>
+                            <strong> { teacher.name } </strong>
+                                <span> { teacher.matter } </span>
                         </div>
                 </header>
-                    <p>
-                        Entusiasta das melhores tecnologias de Química avançada.
-                            <br/>
-                        Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais
-                        de 200.000 pessoas já passaram por uma das minhas explosões.
-                    </p>
+                    <p> { teacher.biography } </p>
                         <footer>
                             <p>
                                 Hora
-                                    <strong> R$ 80,00 </strong>
+                                    <strong> R$ { teacher.cost } </strong>
                             </p>
                                 <button type="button">
                                     <img src={ whatsapp } alt="WhatsApp"/>

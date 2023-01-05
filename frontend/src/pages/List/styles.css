@@ -3,8 +3,37 @@ div#page_list {
     width: 100vw;
 }
 
-form#teachers_search {
+div#page_list header.page-header form#teachers_search {
     margin-top: 3.2rem;
+}
+
+div#page_list header.page-header form#teachers_search button {
+    margin-top: 6.4rem;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font: 700 2rem Archivo;
+    color: var(--color-button-text);
+    background-color: var(--color-secundary);
+    text-decoration: none;
+    border: 0;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition-property: background-color;
+    transition: all 0.2s ease-in-out;
+}
+
+div#page_list header.page-header form#teachers_search button img {
+    margin-right: 1.6rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+div#page_list header.page-header form#teachers_search button:hover {
+    background: var(--color-secundary-dark);
 }
 
 div#page_list main {
@@ -25,10 +54,14 @@ div#page_list header.page-header form#teachers_search div.select-block + div.sel
 
         div#page_list header.page-header form#teachers_search {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             column-gap: 1.6rem;
             position: absolute;
             bottom: -2.5rem;
+        }
+
+        div#page_list header.page-header form#teachers_search button {
+            margin-top: 3.2rem;
         }
 
         div#page_list header.page-header form#teachers_search div.select-block + div.input-block,

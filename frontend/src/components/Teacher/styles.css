@@ -103,6 +103,13 @@ main article.teacher-item footer button:hover {
             padding: 3.2rem 3.2rem 3.2rem 3.2rem;
         }
 
+        main article.teacher-item footer p {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
         main article.teacher-item footer p strong {
             margin-left: 1.6rem;
             display: initial;
