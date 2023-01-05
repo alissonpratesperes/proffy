@@ -6,7 +6,9 @@ import "./styles.css";
     const Input: React.FunctionComponent<InputProps> = ({ label, name, ...rest }) => {
         return (
             <div className="input-block">
-                <label htmlFor={ name }> { label } </label>
+                <label htmlFor={ name }>
+                    { label }
+                </label>
                     <input id={ name } { ...rest }/>
             </div>
         );

@@ -13,17 +13,27 @@ div#page_list main {
     width: 90%;
 }
 
+div#page_list header.page-header form#teachers_search div.select-block + div.input-block,
+div#page_list header.page-header form#teachers_search div.select-block + div.select-block {
+    margin-top: 3.2rem;
+}
+
     @media (min-width: 700px) {
         div#page_list {
             max-width: 100%;
         }
 
-        div#page_list header.page_header form#teachers_search {
+        div#page_list header.page-header form#teachers_search {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             column-gap: 1.6rem;
             position: absolute;
             bottom: -2.5rem;
+        }
+
+        div#page_list header.page-header form#teachers_search div.select-block + div.input-block,
+        div#page_list header.page-header form#teachers_search div.select-block + div.select-block {
+            margin-top: 0rem;
         }
 
         div#page_list main {

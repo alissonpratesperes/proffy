@@ -4,7 +4,7 @@ import whatsapp from "../../assets/icons/whatsapp.svg";
 import "./styles.css";
 
     function Teacher() {
-        return(
+        return (
             <article className="teacher-item">
                 <header>
                     <img src="https://avatars.githubusercontent.com/u/2254731?v=4" alt="Alisson Prates Peres"/>

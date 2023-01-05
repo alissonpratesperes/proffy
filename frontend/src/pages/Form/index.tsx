@@ -20,14 +20,25 @@ import "./styles.css";
                                 <Input label="Nome" name="name"/>
                                 <Input label="Avatar" name="avatar"/>
                                 <Input label="WhatsApp" name="whatsapp"/>
-                                <Textarea label="Biografia" name="biography"/>
+                                    <Textarea label="Biografia" name="biography"/>
                         </fieldset>
                         <fieldset>
                             <legend>
                                 Sobre a aula
                             </legend>
-                                <Select label="Matéria" name="matter"/>
-                                <Input label="Custo Hora/Aula" name="cost"/>
+                                <Select label="Matéria" name="matter" options={[
+                                    { value: "Artes", label: "Artes" },
+                                    { value: "Biologia", label: "Biologia" },
+                                    { value: "Ciências", label: "Ciências" },
+                                    { value: "Educação Física", label: "Educação Física" },
+                                    { value: "Física", label: "Física" },
+                                    { value: "Geografia", label: "Geografia" },
+                                    { value: "História", label: "História" },
+                                    { value: "Matemática", label: "Matemática" },
+                                    { value: "Português", label: "Português" },
+                                    { value: "Química", label: "Química" }
+                                ]}/>
+                                    <Input label="Custo Hora/Aula" name="cost"/>
                         </fieldset>
                             <footer>
                                 <p>
@@ -36,8 +47,8 @@ import "./styles.css";
                                         Preencha todos os dados
                                 </p>
                                     <button type="button">
-                                        <img src={ heart } alt="Save"/>
-                                        Salvar cadastro
+                                        <img src={ heart } alt="Heart"/>
+                                            Salvar cadastro
                                     </button>
                             </footer>
                     </main>

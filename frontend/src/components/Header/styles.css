@@ -1,10 +1,10 @@
-header.page_header {
+header.page-header {
     display: flex;
     flex-direction: column;
     background: var(--color-primary);
 }
 
-header.page_header div.top_bar_container {
+header.page-header div.top-bar-container {
     margin: 0rem auto 0rem auto;
     padding: 1.6rem 0rem 1.6rem 0rem;
     width: 90%;
@@ -14,7 +14,7 @@ header.page_header div.top_bar_container {
     justify-content: space-between;
 }
 
-header.page_header div.top_bar_container a {
+header.page-header div.top-bar-container a {
     height: 3.2rem;
     color: var(--color-title-in-primary);
     opacity: 0.5;
@@ -22,27 +22,27 @@ header.page_header div.top_bar_container a {
     transition: all 0.2s ease-in-out;
 }
 
-header.page_header div.top_bar_container a:hover {
+header.page-header div.top-bar-container a:hover {
     opacity: 1;
 }
 
-header.page_header div.top_bar_container > img {
+header.page-header div.top-bar-container > img {
     height: 2rem;
 }
 
-header.page_header div.page_header_content {
+header.page-header div.page-header-content {
     margin: 3.2rem auto 3.2rem auto;
     width: 90%;
     position: relative;
 }
 
-header.page_header div.page_header_content strong {
+header.page-header div.page-header-content strong {
     font: 700 3rem Archivo;
     line-height: 4.2rem;
     color: var(--color-title-in-primary);
 }
 
-header.page_header div.page_header_content p {
+header.page-header div.page-header-content p {
     margin-top: 3.2rem;
     max-width: 30rem;
     font: 500 1.5rem Poppins;
@@ -51,19 +51,19 @@ header.page_header div.page_header_content p {
 }
 
     @media (min-width: 700px) {
-        header.page_header {
+        header.page-header {
             height: 34rem;
         }
 
-        header.page_header div.top_bar_container {
+        header.page-header div.page-header-content {
             max-width: 1100px;
         }
 
-        header.page_header div.top_bar_container > img {
+        header.page-header div.page-header-content > img {
             height: 4rem;
         }
 
-        header.page_header div.page_header_content {
+        header.page-header div.page-header-content {
             margin: 0rem auto 0rem auto;
             padding-bottom: 4.8rem;
             max-width: 740px;
@@ -74,7 +74,7 @@ header.page_header div.page_header_content p {
             justify-content: center;
         }
 
-        header.page_header div.page_header_content strong {
+        header.page-header div.page-header-content strong {
             max-width: 350px;
         }
     }

@@ -1,4 +1,4 @@
-div#page_list main article.teacher-item {
+main article.teacher-item {
     margin-top: 3.2rem;
     background: var(--color-box-base);
     border: 2px solid var(--color-line-in-white);
@@ -6,43 +6,43 @@ div#page_list main article.teacher-item {
     overflow: hidden;
 }
 
-div#page_list main article.teacher-item header {
+main article.teacher-item header {
     padding: 3.2rem 2rem 3.2rem 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-div#page_list main article.teacher-item header img {
+main article.teacher-item header img {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
 }
 
-div#page_list main article.teacher-item header div {
+main article.teacher-item header div {
     margin-left: 1.6rem;
 }
 
-div#page_list main article.teacher-item header div strong {
+main article.teacher-item header div strong {
     display: block;
     font: 700 3.0rem Archivo;
     color: var(--color-text-title);
 }
 
-div#page_list main article.teacher-item header div span {
+main article.teacher-item header div span {
     margin-top: 0.8rem;
     display: block;
     font: 700 1.3rem Poppins;
 }
 
-div#page_list main article.teacher-item > p {
+main article.teacher-item > p {
     margin-bottom: 3.2rem;
     padding: 0rem 2rem 0rem 2rem;
     font: 500 1.5rem Poppins;
     line-height: 2.8rem;
 }
 
-div#page_list main article.teacher-item footer {
+main article.teacher-item footer {
     padding: 3.2rem 2rem 3.2rem 2rem;
     display: flex;
     flex-direction: row;
@@ -52,18 +52,18 @@ div#page_list main article.teacher-item footer {
     border-top: 2px solid var(--color-line-in-white);
 }
 
-div#page_list main article.teacher-item footer p {
+main article.teacher-item footer p {
     font: 700 1.5rem Poppins;
     color: var(--color-text-title);
 }
 
-div#page_list main article.teacher-item footer p strong {
+main article.teacher-item footer p strong {
     display: block;
     font: 700 2rem Poppins;
     color: var(--color-primary);
 }
 
-div#page_list main article.teacher-item footer button {
+main article.teacher-item footer button {
     height: 6rem;
     width: 25rem;
     display: flex;
@@ -80,40 +80,40 @@ div#page_list main article.teacher-item footer button {
     transition: all 0.2s ease-in-out;
 }
 
-div#page_list main article.teacher-item footer button img {
+main article.teacher-item footer button img {
     margin-right: 1.6rem;
     height: 2.5rem;
     width: 2.5rem;
 }
 
-div#page_list main article.teacher-item footer button:hover {
+main article.teacher-item footer button:hover {
     background: var(--color-secundary-dark);
 }
 
     @media (min-width: 700px) {
-        div#page_list main article.teacher-item header {
+        main article.teacher-item header {
             padding: 3.2rem 3.2rem 3.2rem 3.2rem;
         }
 
-        div#page_list main article.teacher-item > p {
+        main article.teacher-item > p {
             padding: 0rem 3.2rem 0rem 3.2rem;
         }
 
-        div#page_list main article.teacher-item footer {
+        main article.teacher-item footer {
             padding: 3.2rem 3.2rem 3.2rem 3.2rem;
         }
 
-        div#page_list main article.teacher-item footer p strong {
+        main article.teacher-item footer p strong {
             margin-left: 1.6rem;
             display: initial;
         }
 
-        div#page_list main article.teacher-item footer button {
+        main article.teacher-item footer button {
             width: 24.5rem;
             justify-content: center;
         }
 
-        div#page_list main article.teacher-item footer button img {
+        main article.teacher-item footer button img {
             margin-right: 1.6rem;
         }
     }

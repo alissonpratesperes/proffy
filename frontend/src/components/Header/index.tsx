@@ -8,14 +8,14 @@ import "./styles.css";
 
     const Header: React.FunctionComponent<HeaderProps> = (properties) => {
         return (
-            <header className="page_header">
-                <div className="top_bar_container">
+            <header className="page-header">
+                <div className="top-bar-container">
                     <Link to="/">
                         <img src={ back } alt="Back"/>
                     </Link>
                         <img src={ logo } alt="Proffy"/>
                 </div>
-                <div className="page_header_content">
+                <div className="page-header-content">
                     <strong>
                         { properties.title }
                     </strong>
