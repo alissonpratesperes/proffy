@@ -6,30 +6,13 @@ import convertHoursToMinutes from "../utils/convertHoursToMinutes";
 
     class ClassesController {
         async create(request: Request, response: Response) {
-            const {
-                name,
-                avatar,
-                whatsapp,
-                biography,
-                matter,
-                cost,
-                schedule
-            } = request.body;
+            const { name, avatar, whatsapp, biography, matter, cost, schedule } = request.body;
             const trx = await db.transaction();
             
                 try {
-                    const insertedTeachersIds = await trx("teachers").insert({
-                        name,
-                        avatar,
-                        whatsapp,
-                        biography
-                    });
+                    const insertedTeachersIds = await trx("teachers").insert({ name, avatar, whatsapp, biography });
                     const teacher_id = insertedTeachersIds[0];
-                    const insertedClassesIds = await trx("classes").insert({
-                        matter,
-                        cost,
-                        teacher_id
-                    });
+                    const insertedClassesIds = await trx("classes").insert({ matter, cost, teacher_id });
                     const class_id = insertedClassesIds[0];
                     const classSchedule = schedule.map((scheduleItem: ScheduleItem) => {
                         return {
@@ -39,12 +22,10 @@ import convertHoursToMinutes from "../utils/convertHoursToMinutes";
                                 to: convertHoursToMinutes(scheduleItem.to)
                         };
                     });
-        
-                        await trx("class_schedule").insert(
-                            classSchedule
-                        );
+
+                        await trx("class_schedule").insert(classSchedule);
                         await trx.commit();
-        
+                        
                             return response.status(201).send();
                 } catch(error) {
                     await trx.rollback();
