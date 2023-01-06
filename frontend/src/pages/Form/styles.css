@@ -73,6 +73,10 @@ div#page_form main form fieldset div.select-block label {
     color: var(--color-text-complement);
 }
 
+div#page_form main form div.schedule-item + div.schedule-item {
+    margin-top: 3.2rem;
+}
+
 div#page_form main form footer {
     margin-top: 6.4rem;
     padding: 3.2rem 3.2rem 3.2rem 3.2rem;
