@@ -5,6 +5,7 @@ import { StyleSheet } from "react-native";
             padding: 32,
             flex: 1,
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
             backgroundColor: "#8257E5"
         },
@@ -60,7 +61,7 @@ import { StyleSheet } from "react-native";
             marginTop: 32,
             maxWidth: 150,
             fontFamily: "Poppins_400Regular",
-            fontsize: 13,
+            fontSize: 13,
             color: "#D4C2FF",
             lineHeight: 20
         }
