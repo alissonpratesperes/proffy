@@ -5,7 +5,7 @@ import * as Font from "expo-font";
 import { Archivo_400Regular, Archivo_700Bold } from "@expo-google-fonts/archivo";
 import { Poppins_400Regular, Poppins_600SemiBold } from "@expo-google-fonts/poppins";
 
-import Landing from "./src/pages/Landing";
+import Stack from "./src/routes/Stack";
 
   function App() {
     const [ appReady, setAppReady ] = useState(false);
@@ -36,7 +36,7 @@ import Landing from "./src/pages/Landing";
           return (
             <>
               <StatusBar style="light"/>
-                <Landing/>
+                <Stack/>
             </>
           );
   };
