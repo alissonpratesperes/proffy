@@ -9,7 +9,6 @@ import ConnectionsController from "./controllers/ConnectionsController";
 
         routes.post("/classes", classesController.create);
         routes.post("/connections", connectionsController.create);
-
         routes.get("/classes", classesController.index);
         routes.get('/connections', connectionsController.index);
 

@@ -3,9 +3,7 @@ import { Knex } from "knex";
     export async function up(knex: Knex) {
         return knex.schema.createTable("connections", table => {
             table.increments("id").primary();
-
             table.timestamp("created_at").notNullable().defaultTo(knex.raw("current_timestamp"));
-
             table.integer("teacher_id").notNullable().references("id").inTable("teachers").onUpdate("CASCADE").onDelete("CASCADE");
         });
     };
