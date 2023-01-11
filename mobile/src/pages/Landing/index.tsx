@@ -15,6 +15,9 @@ import styles from "./styles";
             function handleNavigationToTeachPage() {
                 navigate("Teach" as never);
             };
+            function handleNavigationToStudyPage() {
+                navigate("TabNavigation" as never);
+            };
 
                 return (
                     <View style={ styles.container }>
@@ -26,7 +29,7 @@ import styles from "./styles";
                                     </Text>
                             </Text>
                                 <View style={ styles.buttonsContainer }>
-                                    <RectButton style={[ styles.button, styles.buttonPrimary ]}>
+                                    <RectButton style={[ styles.button, styles.buttonPrimary ]} onPress={ handleNavigationToStudyPage }>
                                         <Image source={ study }/>
                                             <Text style={ styles.buttonText }> Estudar </Text>
                                     </RectButton>
