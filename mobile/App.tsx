@@ -14,11 +14,10 @@ import Stack from "./src/routes/Stack";
         (async() => {
           try {
             await SplashScreen.preventAutoHideAsync();
-
-              await Font.loadAsync({ Archivo_400Regular });
-              await Font.loadAsync({ Archivo_700Bold });
-              await Font.loadAsync({ Poppins_400Regular });
-              await Font.loadAsync({ Poppins_600SemiBold });
+            await Font.loadAsync({ Archivo_400Regular });
+            await Font.loadAsync({ Archivo_700Bold });
+            await Font.loadAsync({ Poppins_400Regular });
+            await Font.loadAsync({ Poppins_600SemiBold });
           } catch(error) {
             console.warn(error);
           } finally {

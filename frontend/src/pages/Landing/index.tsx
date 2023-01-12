@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/logo.svg";
@@ -15,7 +15,6 @@ import "./styles.css";
             useEffect(() => {
                 api.get("/connections").then(response => {
                     const { total } = response.data;
-
                         setTotalConnections(total);
                 });
             }, []);
