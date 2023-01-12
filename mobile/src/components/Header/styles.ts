@@ -13,8 +13,15 @@ import { StyleSheet } from "react-native";
             justifyContent: "space-between"
         },
 
+        header: {
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between"
+        },
+
         title: {
-            marginVertical: 32,
+            marginVertical: 8,
             maxWidth: 240,
             fontFamily: "Archivo_700Bold",
             fontSize: 25,

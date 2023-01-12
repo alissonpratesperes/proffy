@@ -13,7 +13,7 @@ import styles from "./styles";
                         style={ styles.list }
                             contentContainerStyle={{
                                 paddingHorizontal: 8,
-                                paddingBottom: 16
+                                paddingVertical: 16
                             }}
                     >
                         <Teacher/>

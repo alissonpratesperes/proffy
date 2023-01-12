@@ -27,7 +27,7 @@ import "./styles.css";
                                 </p>
                                     <a href={`https://wa.me/${teacher.whatsapp}`} target="_blank" onClick={ handleCreateNewConnection }>
                                         <img src={ whatsapp } alt="WhatsApp"/>
-                                            Entrar em contato
+                                            WhatsApp
                                     </a>
                             </footer>
                 </article>

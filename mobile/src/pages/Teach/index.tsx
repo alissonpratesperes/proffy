@@ -1,10 +1,10 @@
 import React from "react";
-import { View, ImageBackground, Text, Image } from "react-native";
+import { View, ImageBackground, Text } from "react-native";
 import { RectButton } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
+import { Feather } from "@expo/vector-icons";
 
 import teachBackground from "../../assets/images/give-classes-background.png";
-import back from "../../assets/icons/back.png";
 import styles from "./styles";
 
     function Teach() {
@@ -25,7 +25,11 @@ import styles from "./styles";
                             </Text>
                         </ImageBackground>
                             <RectButton style={ styles.button } onPress={ handleNavigateBack }>
-                                <Image source={ back }/>
+                                <Feather
+                                    name="arrow-left"
+                                        size={ 25 }
+                                            color="#FFFFFF"
+                                />
                                     <Text style={ styles.buttonText }>
                                         Voltar
                                     </Text>

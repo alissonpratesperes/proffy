@@ -8,7 +8,7 @@ import logo from "../../assets/images/logo.png";
 import HeaderProps from "../../interfaces/HeaderProps.interface";
 import styles from "./styles";
 
-    const Header: React.FunctionComponent<HeaderProps> = ({ title }) => {
+    const Header: React.FunctionComponent<HeaderProps> = ({ title, children, filter }) => {
         const { navigate } = useNavigation();
 
             function handleNavigateBack() {
@@ -23,9 +23,13 @@ import styles from "./styles";
                             </BorderlessButton>
                                 <Image source={ logo } resizeMode="contain"/>
                         </View>
+                        <View style={ styles.header }>
                             <Text style={ styles.title }>
                                 { title }
                             </Text>
+                                { filter }
+                        </View>
+                            { children }
                     </View>
                 );
     };
