@@ -8,15 +8,19 @@ import heartUnfavorite from "../../assets/icons/unfavorite.png";
 import whatsapp from "../../assets/icons/whatsapp.png";
 import TeacherItem from "../../interfaces/Teacher.interface";
 import TeacherProps from "../../interfaces/TeacherProps.interface";
+import api from "../../services/api";
 import styles from "./styles";
 
     const Teacher: React.FunctionComponent<TeacherProps> = ({ teacher, favorited }) => {
         const [ isFavorited, setIsFavorited ] = useState(favorited);
 
             function handleLinkToWhatsApp() {
-                Linking.openURL(
-                    `whatsapp://send?phone=${ teacher.whatsapp }`
-                );
+                api.post("/connections", {
+                    teacher_id: teacher.id
+                });
+                    Linking.openURL(
+                        `whatsapp://send?phone=${ teacher.whatsapp }`
+                    );
             };
             async function handleToggleFavorite() {
                 const favorites = await AsyncStorage.getItem("favoritedTeachers");
