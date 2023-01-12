@@ -10,45 +10,47 @@ import Favorites from "../pages/Favorites";
         function TabNavigation() {
             return (
                 <Navigator screenOptions={{
-                    tabBarStyle: {
-                        height: 64,
-                        elevation: 0,
-                        shadowOpacity: 0
-                    },
+                    headerShown: false,
 
-                    tabBarItemStyle: {
-                        display: "flex",
-                        flexDirection: "row",
-                        alignItems: "center",
-                        justifyContent: "center"
-                    },
+                        tabBarStyle: {
+                            height: 64,
+                            elevation: 0,
+                            shadowOpacity: 0
+                        },
 
-                    tabBarIconStyle: {
-                        height: 25,
-                        width: 25,
-                        flex: 0
-                    },
+                        tabBarItemStyle: {
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            justifyContent: "center"
+                        },
 
-                    tabBarLabelStyle: {
-                        marginLeft: 16,
-                        fontFamily: "Archivo_700Bold",
-                        fontSize: 20
-                    },
+                        tabBarIconStyle: {
+                            height: 25,
+                            width: 25,
+                            flex: 0
+                        },
 
-                        tabBarInactiveBackgroundColor: "#FAFAFC",
-                        tabBarInactiveTintColor: "#C1BCCC",
-                        tabBarActiveBackgroundColor: "#EBEBF5",
-                        tabBarActiveTintColor: "#32264D"
+                        tabBarLabelStyle: {
+                            marginLeft: 16,
+                            fontFamily: "Archivo_700Bold",
+                            fontSize: 20
+                        },
+
+                            tabBarInactiveBackgroundColor: "#FAFAFC",
+                            tabBarInactiveTintColor: "#C1BCCC",
+                            tabBarActiveBackgroundColor: "#EBEBF5",
+                            tabBarActiveTintColor: "#32264D"
                 }}>
                     <Screen
                         name="List"
                             component={ List }
                                 options={{
-                                    tabBarIcon: ({ color, size }) => {
+                                    tabBarIcon: ({ color, size, focused }) => {
                                         return (
                                             <Ionicons
                                                 name="ios-easel"
-                                                    color={ color }
+                                                    color={ focused ? "#8257E5" : color }
                                                         size={ size }
                                             />
                                         );
@@ -60,11 +62,11 @@ import Favorites from "../pages/Favorites";
                         name="Favorites"
                             component={ Favorites }
                                 options={{
-                                    tabBarIcon: ({ color, size }) => {
+                                    tabBarIcon: ({ color, size, focused }) => {
                                         return (
                                             <Ionicons
                                                 name="ios-heart"
-                                                    color={ color }
+                                                    color={ focused ? "#8257E5" : color }
                                                         size={ size }
                                             />
                                         );

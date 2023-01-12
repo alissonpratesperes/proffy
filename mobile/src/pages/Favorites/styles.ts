@@ -4,6 +4,10 @@ import { StyleSheet } from "react-native";
         container: {
             flex: 1,
             backgroundColor: "#F0F0F7"
+        },
+
+        list: {
+            marginTop: -32
         }
     });
 
