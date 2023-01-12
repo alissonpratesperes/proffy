@@ -88,7 +88,7 @@ import { StyleSheet } from "react-native";
         },
 
         favoriteButton: {
-            marginRight: 8,
+            marginRight: 16,
             height: 75,
             width: 75,
             display: "flex",
