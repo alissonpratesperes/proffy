@@ -5,20 +5,21 @@ import { RectButton } from "react-native-gesture-handler";
 import heartOutline from "../../assets/icons/heart-outline.png";
 import heartUnfavorite from "../../assets/icons/unfavorite.png";
 import whatsapp from "../../assets/icons/whatsapp.png";
+import TeacherProps from "../../interfaces/TeacherProps.interface";
 import styles from "./styles";
 
-    function Teacher() {
+    const Teacher: React.FunctionComponent<TeacherProps> = ({ teacher }) => {
         return (
             <View style={ styles.container }>
                 <View style={ styles.profile }>
-                    <Image style={ styles.avatar } source={{ uri: "https://github.com/alissonpratesperes.png" }}/>
+                    <Image style={ styles.avatar } source={{ uri: teacher.avatar }}/>
                         <View style={ styles.info }>
-                            <Text style={ styles.name }> Alisson Prates Peres </Text>
-                            <Text style={ styles.matter }> Química </Text>
+                            <Text style={ styles.name }> { teacher.name } </Text>
+                            <Text style={ styles.matter }> { teacher.matter } </Text>
                         </View>
                 </View>
                     <Text style={ styles.biography }>
-                        🧑🏻‍🚀 Newbie but focused. 🎯
+                        { teacher.biography }
                     </Text>
                         <View style={ styles.footer }>
                             <View style={ styles.price }>
@@ -26,7 +27,7 @@ import styles from "./styles";
                                     Hora
                                 </Text>
                                 <Text style={ styles.value }>
-                                    R$ 20,00
+                                    R$ { teacher.cost }
                                 </Text>
                             </View>
                             <View style={ styles.buttons }>
