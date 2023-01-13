@@ -38,8 +38,8 @@ Essa Aplicação foi desenvolvida utilizando as seguintes tecnologias:
 - <a href="https://reactjs.org/">ReactJS</a>
 - <a href="https://reactrouter.com/en/main">React Router DOM</a>
 - <a href="https://axios-http.com/">Axios</a>
-- <a href="https://reactnavigation.org/">React Navigation</a>
 - <a href="https://reactnative.dev/">React Native</a>
+- <a href="https://reactnavigation.org/">React Navigation</a>
 - <a href="https://expo.dev/">Expo IO</a>
 
 ## :fuelpump: Autor
