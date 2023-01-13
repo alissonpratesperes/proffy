@@ -24,10 +24,6 @@ ___
 
 ## :dart: Sobre
 
-A **Proffy** é uma Aplicação envolvendo uma plataforma de estudos online que ajuda pessoas a encontrarem professores online.
-
-## :dart: Sobre
-
 A **Ecoleta** é uma Aplicação envolvendo um marketplace que ajuda pessoas a encontrarem pontos de coleta de resíduos de forma eficiente.
 
 ## :battery: Tecnologias
