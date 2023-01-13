@@ -44,7 +44,7 @@ Essa Aplicação foi desenvolvida utilizando as seguintes tecnologias:
 
 ## :electric_plug: Execute
 
-    - Clonar o Repositório:
+    - Clonar o Repositório.
     - Instalar as Dependências do Back-End com o Comando: "npm install":
         |- Criar o Banco de Dados com o Comando: "npm run knex:migrate";
             >_ Inicializar o Back-End com o Comando: "npm run start".
