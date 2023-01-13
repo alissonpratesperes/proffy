@@ -47,3 +47,7 @@ Essa Aplicação foi desenvolvida utilizando as seguintes tecnologias:
 Projeto desenvolvido durante a **Next Level Week 02** da <a href="https://rocketseat.com.br/">Rocketseat</a>, ocorrida em **Agosto de 2020**;
 
 Acesse <a href="https://github.com/rocketseat-education/nlw-02-omnistack">aqui</a> o **repositório oficial** da aplicação.
+
+## :memo: Licença
+
+Esse projeto está sob a **Licença MIT**. Veja o arquivo [LICENSE](https://github.com/alissonpratesperes/proffy/blob/main/LICENSE) para mais detalhes.
