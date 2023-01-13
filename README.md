@@ -20,3 +20,8 @@ ___
     <a href="#fuelpump-autor">Autor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#memo-licença">Licença</a>
 </p>
+    <br/>
+
+## :dart: Sobre
+
+A **Proffy** é uma Aplicação envolvendo uma plataforma de estudos online que ajuda pessoas a encontrarem professores online.
