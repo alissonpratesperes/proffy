@@ -24,7 +24,7 @@ ___
 
 ## :dart: Sobre
 
-A **Proffy** é uma Aplicação envolvendo uma plataforma de estudos online que ajuda pessoas a encontrarem professores online.
+A **Proffy** é uma Aplicação envolvendo uma plataforma de estudos que ajuda pessoas a encontrarem professores online.
 
 ## :battery: Tecnologias
 Essa Aplicação foi desenvolvida utilizando as seguintes tecnologias:
@@ -38,9 +38,9 @@ Essa Aplicação foi desenvolvida utilizando as seguintes tecnologias:
 - <a href="https://reactjs.org/">ReactJS</a>
 - <a href="https://reactrouter.com/en/main">React Router DOM</a>
 - <a href="https://axios-http.com/">Axios</a>
-- <a href="https://expo.dev/">Expo IO</a>
 - <a href="https://reactnavigation.org/">React Navigation</a>
 - <a href="https://reactnative.dev/">React Native</a>
+- <a href="https://expo.dev/">Expo IO</a>
 
 ## :fuelpump: Autor
 
